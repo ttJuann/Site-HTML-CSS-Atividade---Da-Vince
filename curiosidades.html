@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonardo da Vinci</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 1;
+            justify-content: center;
+            gap: 20px;
+        }
+
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15;
+            text-align: justify;
+
+        }
+
+        header {
+            background-color: #506e6a;
+
+        }
+
+        ul {
+            list-style-type: none;
+
+            color: #506e6a;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506e6a 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506e6a;
+            color: white;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            grid-row-start: 1;
+            grid-row-end: 6;
+            background-color: #506e6a;
+            color: white;
+            text-align: center;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+   <header class="container">
+    <h1 style="color: white; text-align: center;">Biografia Leonardo da Vinci</h1>
+    <br>
+    
+   </header>
+   <nav class="container menu">
+    <ul>
+        <li><a href="index.html">Biografia</a></li>
+        <li><a href="obras.html">Obras</a></li>
+        <li><a href="curiosidades.html">Curiosidades</a></li>
+    </ul>
+   </nav>
+   <div class="container wrapper">
+    <aside class="imagem_leo">
+        <img src="leonardo-da-vinci.png">
+        <div class="infos">
+            <p><strong>Ocupação</strong>Pintor italiano</p>
+            <p>
+                <strong>Data do Nascimento</strong>
+                15/04/1452
+            </p>
+            <p><strong>Data da Morte</strong>02/05/1519 (aos 67 anos)</p>
+        </div>
+
+    </aside>
+    <section class="principal">
+        <h1>
+            Leonardo da Vinci - Curiosidades
+        </h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero obcaecati tempore temporibus sint molestiae corrupti accusantium odit asperiores! Similique praesentium quas magnam laborum quae. Excepturi in eaque blanditiis quos.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, aut! Aut, facilis nesciunt! Incidunt saepe voluptatibus ea qui nam nisi vel molestiae adipisci fugit laboriosam laborum, voluptatum earum accusantium maxime.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis iste cupiditate perspiciatis voluptatem omnis ut dicta optio accusantium expedita, nesciunt autem beatae enim fuga corrupti laboriosam, nisi tempore! Facilis, voluptate.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, blanditiis fugiat saepe accusamus qui quisquam maxime minima molestiae culpa iste possimus quam, praesentium cum reiciendis, atque impedit eos quas consequuntur.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque fugit quo saepe tempora aut quibusdam? Soluta ex, atque exercitationem nam optio quaerat distinctio? Cum aspernatur maxime hic. Iste, optio totam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore, ullam deserunt ducimus adipisci, reprehenderit cupiditate expedita deleniti libero atque quia, illum doloremque odio excepturi? Dolorum voluptas eius reprehenderit debitis!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit, recusandae! Eum, voluptate nostrum. Sequi quia hic nesciunt accusamus ab non sed dolore officiis quos deserunt suscipit facilis ut, culpa inventore?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae aspernatur esse blanditiis veniam facere dicta, laudantium similique delectus odio tempore voluptatem nisi quas tenetur, eos dolorem quia ab consequatur? Et.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolores nam porro vitae exercitationem aut dolor quis nisi quod sit tenetur laudantium ipsam natus! Enim dignissimos animi vero aut consectetur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni laudantium repudiandae possimus porro autem ipsam, totam in accusamus fugiat eum blanditiis, a vero incidunt! Cum repudiandae quae accusantium minima vitae!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, aut aliquam dignissimos velit nostrum hic magnam in corporis ad assumenda accusamus voluptates numquam nemo est tempore inventore sed quasi labore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod unde illum corporis adipisci praesentium numquam beatae dolores eius aspernatur ducimus possimus eligendi, consectetur maiores ullam, quos animi dolor veniam vero!</p>
+    </section>
+   </div>
+   <footer class="container">
+    <h1>Desenvolvido para fins educacionais</h1>
+   </footer>
+   </div>
+</body>
+
+</html>
